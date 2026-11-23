@@ -2,87 +2,14 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Joyna Saturdays · Coming soon</title>
-<meta name="description" content="One plan, a small group and a member hosting, every Saturday in London. Coming soon.">
-<meta property="og:title" content="Joyna Saturdays · Coming soon">
-<meta property="og:description" content="One plan, a small group and a member hosting, every Saturday in London.">
-<meta property="og:image" content="https://joyna.ai/table.jpg">
-<meta property="og:url" content="https://joyna.ai/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0C0D11">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232748E5'/%3E%3Ctext x='16' y='23' font-family='Arial Black,sans-serif' font-size='20' fill='%23fff' text-anchor='middle'%3Ej%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Space+Grotesk:wght@400;500;700&display=swap">
-<style>
-:root{
-  --cream:#F9F6E5; --ink:#0C0D11; --card:#FFFFFF; --blue:#2748E5; --sticker:#DFE061; --pink:#F4D0E4; --muted:#545763;
-  --display:"Dela Gothic One","Arial Black",sans-serif; --body:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;
-}
-*{box-sizing:border-box}
-[hidden]{display:none!important}
-html,body{height:100%}
-body{margin:0;background:var(--ink);color:var(--ink);font:16px/1.55 var(--body)}
-.stage{position:relative;min-height:100%;display:grid;place-items:center;overflow:hidden;
-  padding-top:calc(96px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.stage>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.stage::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,13,17,.45),rgba(12,13,17,.1) 40%,rgba(12,13,17,.35))}
-.logo{position:absolute;z-index:2;top:calc(24px + env(safe-area-inset-top,0px));left:max(24px,env(safe-area-inset-left,0px));font:400 1.7rem var(--display);color:#fff;margin:0}
-.card{position:relative;z-index:2;width:min(520px,100%);background:var(--cream);border:2px solid var(--ink);border-radius:26px;padding:40px 28px 28px;box-shadow:8px 8px 0 var(--ink);display:grid;gap:18px}
-@media(min-width:600px){.card{padding:48px 40px 36px}}
-.sticker{position:absolute;top:-22px;right:22px;background:var(--sticker);border:2px solid var(--ink);border-radius:12px;padding:6px 14px;font:400 1.05rem var(--display);text-transform:lowercase;transform:rotate(4deg);box-shadow:3px 3px 0 var(--ink)}
-h1{font:400 clamp(2.3rem,7vw,3.4rem)/1 var(--display);text-transform:lowercase;letter-spacing:-.01em;margin:0;text-wrap:balance}
-.card p{margin:0;color:var(--muted);font-size:1.08rem}
-form{display:grid;gap:10px}
-@media(min-width:480px){form{grid-template-columns:1fr auto}}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-input{min-width:0;height:50px;border:2px solid var(--ink);border-radius:999px;padding:0 20px;font:500 1rem var(--body);background:var(--card);color:var(--ink)}
-button{height:50px;border:2px solid var(--ink);border-radius:999px;padding:0 22px;font:700 1rem var(--body);background:var(--blue);color:#fff;box-shadow:3px 3px 0 var(--ink);cursor:pointer;transition:transform .12s,box-shadow .12s}
-button:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
-button[disabled]{opacity:.7;cursor:wait}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.card p.small{font-size:.85rem}
-.card p.done{color:var(--ink);font-weight:700;background:var(--pink);border:2px solid var(--ink);border-radius:14px;padding:12px 14px}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
+<title>Joyna Saturdays</title>
+<!-- joyna.ai has moved. GitHub Pages can't send a 301, so: instant JS redirect (keeps ?utm etc.), meta refresh for no-JS. -->
+<link rel="canonical" href="https://joynasaturdays.com/">
+<meta http-equiv="refresh" content="0; url=https://joynasaturdays.com/">
+<meta name="robots" content="noindex">
+<script>location.replace('https://joynasaturdays.com/' + location.search);</script>
 </head>
 <body>
-<main class="stage">
-  <img src="table.jpg" alt="A long table of friends talking and laughing over dinner outside">
-  <p class="logo">joyna</p>
-  <div class="card">
-    <span class="sticker">coming soon</span>
-    <h1>saturdays, but with new people.</h1>
-    <p>One plan, a small group and a member hosting, every Saturday in London. We're nearly ready.</p>
-    <form id="f" novalidate>
-      <label class="sr" for="email">Email address</label>
-      <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
-      <input class="sr" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button type="submit">Join the list</button>
-    </form>
-    <p class="small" id="msg" aria-live="polite">We'll email you once, when it opens.</p>
-  </div>
-</main>
-<script>
-// Where sign-ups go: the "joyna.ai waitlist" Google Sheet's Apps Script web app (see waitlist.gs).
-const FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbw7Y6O-wji8Z1-XaKo_LHeoPb6fmDkr-scf7U08xicZ9Kmg8JeVoT8YQ8Da0pnavV1SXQ/exec';
-const f = document.getElementById('f'), e = document.getElementById('email'), m = document.getElementById('msg'), b = f.querySelector('button');
-f.onsubmit = async (ev) => {
-  ev.preventDefault();
-  if (!e.value || !e.checkValidity()) { m.textContent = "That email doesn't look right. Check it and try again."; e.focus(); return; }
-  b.disabled = true;
-  try {
-    const body = new URLSearchParams(new FormData(f));
-    body.set('page', location.hostname);
-    // Apps Script doesn't send CORS headers, so the reply can't be read; a network failure still throws.
-    await fetch(FORM_ENDPOINT, { method: 'POST', mode: 'no-cors', body });
-    f.hidden = true; m.textContent = "You're on the list. See you on a Saturday soon."; m.className = 'done';
-  } catch {
-    b.disabled = false; m.textContent = "That didn't go through. Try again in a minute.";
-  }
-};
-</script>
+<p>Joyna Saturdays has moved to <a href="https://joynasaturdays.com/">joynasaturdays.com</a>.</p>
 </body>
 </html>
